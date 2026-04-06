@@ -2,8 +2,8 @@ import requests
 import csv
 import time
 
-CLIENT_ID = "11336002-4513092c-90da-4770"
-CLIENT_SECRET = "97e0b9d8-bb5c-41cf-827c-9278e6b5b038"
+CLIENT_ID = "[OAUTH_CLIENT_ID]"
+CLIENT_SECRET = "[OAUTH_CLIENT_SECRET]"
 
 print("🔑 正在向 TDX 申請通行證...")
 auth_url = "https://tdx.transportdata.tw/auth/realms/TDXConnect/protocol/openid-connect/token"

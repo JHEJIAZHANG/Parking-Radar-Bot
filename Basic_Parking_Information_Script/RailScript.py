@@ -2,8 +2,8 @@ import requests
 import csv
 import time
 
-CLIENT_ID = "11336002-4513092c-90da-4770"
-CLIENT_SECRET = "97e0b9d8-bb5c-41cf-827c-9278e6b5b038"
+CLIENT_ID = "[OAUTH_CLIENT_ID]"
+CLIENT_SECRET = "[OAUTH_CLIENT_SECRET]"
 
 # 官方文件提供的軌道業者名單：台鐵、高鐵、北捷、高捷、桃捷、中捷
 operators = ["TRA", "THSR", "TRTC", "KRTC", "TYMC", "TMRT"]
@@ -68,11 +68,11 @@ if auth_response.status_code == 200:
                 
                 skip += top
                 page += 1
-                time.sleep(1) 
+                time.sleep(25) 
                 
             elif response.status_code == 429:
                 print("⚠️ 觸發 API 頻率限制 (429)，休息 5 秒後自動重試...")
-                time.sleep(20)
+                time.sleep(25)
                 continue 
                 
             else:

@@ -5,8 +5,8 @@ import time
 # ==========================================
 # 1. 請填寫你從 TDX 申請到的 API 金鑰
 # ==========================================
-CLIENT_ID = "11336002-4513092c-90da-4770"
-CLIENT_SECRET = "97e0b9d8-bb5c-41cf-827c-9278e6b5b038"
+CLIENT_ID = "[OAUTH_CLIENT_ID]"
+CLIENT_SECRET = "[OAUTH_CLIENT_SECRET]"
 
 # 1. 建立城市陣列 (你剛剛貼的所有縣市)
 cities = [
