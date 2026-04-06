@@ -36,10 +36,10 @@ logger.info("資料庫已載入")
 
 
 # ════════════════════════════════════════════════════════════
-#  Flex Message — iOS Style
+#  Flex Message
 # ════════════════════════════════════════════════════════════
 
-# iOS 系統色（不用 emoji，改用文字 + 色彩表達）
+# 系統色（不用 emoji，改用文字 + 色彩表達）
 IOS_BLUE   = "#007AFF"
 IOS_GREEN  = "#34C759"
 IOS_ORANGE = "#FF9500"
@@ -68,11 +68,11 @@ def _type_color(t):
     """類型的主題色"""
     return {
         "市區路外": IOS_BLUE,
-        "市區路邊": IOS_RED,      # iOS red
-        "觀光景點": IOS_GREEN,    # iOS green
-        "軌道車站": IOS_ORANGE,   # iOS orange
-        "國道休息站": "#5AC8FA",  # iOS teal
-        "航空站": "#AF52DE",      # iOS purple
+        "市區路邊": IOS_RED,
+        "觀光景點": IOS_GREEN,
+        "軌道車站": IOS_ORANGE,
+        "國道休息站": "#5AC8FA",
+        "航空站": "#AF52DE",
     }.get(t, IOS_GRAY)
 
 
@@ -158,7 +158,7 @@ def _avail_section(lot):
 
 
 def _info_row(label, value):
-    """iOS 風格的資訊列"""
+    """資訊列"""
     return {
         "type": "box", "layout": "horizontal", "spacing": "sm",
         "margin": "md",
